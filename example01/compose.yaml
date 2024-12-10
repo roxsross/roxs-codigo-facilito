@@ -1,0 +1,11 @@
+services:
+  app:
+    container_name: samplev1
+    #image: roxsross12/docker-sample-color:v1
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8085:5000
+    environment:
+      - COLOR=green
